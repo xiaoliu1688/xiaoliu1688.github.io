@@ -63,7 +63,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/img/head.jpg" class="js-avatar">
+			<img src="/img/19.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 			<h1 class="header-author"><a href="/">John Doe</a></h1>
@@ -100,7 +100,7 @@
 			<div class="social">
 				
 					
-						<a class="github" href="#" 
+						<a class="github" href="http://xiaoliu1688.hithub" 
 												title="GitHub" target="_blank"><i class="icon-github"></i></a>
 					
 				
@@ -117,6 +117,11 @@
 					
 						<a class="jianshu" href="#" 
 												title="简书" target="_blank"><i class="icon-jianshu"></i></a>
+					
+				
+					
+						<a class="mail" href="mailto:2760598291@qq.com" 
+												title="邮件联系" target="_blank"><i class="icon-mail"></i></a>
 					
 				
 			</div>
@@ -144,7 +149,7 @@
 		<header id="header" class="inner">
 			<div class="profilepic">
 				<a href="/">
-					<img src="/img/head.jpg" class="js-avatar">
+					<img src="/img/19.jpg" class="js-avatar">
 				</a>
 			</div>
 			<hgroup>
@@ -166,7 +171,7 @@
 					
 						
 						<a class="github" target="_blank" 
-							href="#" title="GitHub"><i class="icon-github"></i></a>
+							href="http://xiaoliu1688.hithub" title="GitHub"><i class="icon-github"></i></a>
 						
 					
 						
@@ -182,6 +187,11 @@
 						
 						<a class="jianshu" target="_blank" 
 							href="#" title="简书"><i class="icon-jianshu"></i></a>
+						
+					
+						
+						<a class="mail" target="_blank" 
+							href="mailto:2760598291@qq.com" title="邮件联系"><i class="icon-mail"></i></a>
 						
 					
 				</div>
@@ -441,10 +451,10 @@
   var titleTime;
   document.addEventListener("visibilitychange", function () {
     if (document.hidden) {
-      document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
+      document.title = "快回到主页" + originTitle;
       clearTimeout(titleTime);
     } else {
-      document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
+      document.title = "返回主页" + originTitle;
       titleTime = setTimeout(function () {
         document.title = originTitle;
       }, 2000);
