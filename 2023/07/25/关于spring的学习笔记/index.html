@@ -10,12 +10,12 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="第一章 初识Spring1.1 Spring简介landscape Spring是一个为简化企业级开发而生的开源框架。 Spring是一个IOC(DI)和AOP容器框架。 IOC全称：Inversion of Control【控制反转】 将对象【万物皆对象】控制权交给Spring 注意：new的对象，不能被JVM垃圾回收机制回收    DI全称：(Dependency Injection)：依赖注">
+  <meta name="description" content="关于spring的学习笔记第一章 初识Spring1.1 Spring简介landscape Spring是一个为简化企业级开发而生的开源框架。 Spring是一个IOC(DI)和AOP容器框架。 IOC全称：Inversion of Control【控制反转】 将对象【万物皆对象】控制权交给Spring 注意：new的对象，不能被JVM垃圾回收机制回收">
 <meta property="og:type" content="article">
 <meta property="og:title" content="xiaoliu">
 <meta property="og:url" content="http://example.com/2023/07/25/%E5%85%B3%E4%BA%8Espring%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="xiaoliu">
-<meta property="og:description" content="第一章 初识Spring1.1 Spring简介landscape Spring是一个为简化企业级开发而生的开源框架。 Spring是一个IOC(DI)和AOP容器框架。 IOC全称：Inversion of Control【控制反转】 将对象【万物皆对象】控制权交给Spring 注意：new的对象，不能被JVM垃圾回收机制回收    DI全称：(Dependency Injection)：依赖注">
+<meta property="og:description" content="关于spring的学习笔记第一章 初识Spring1.1 Spring简介landscape Spring是一个为简化企业级开发而生的开源框架。 Spring是一个IOC(DI)和AOP容器框架。 IOC全称：Inversion of Control【控制反转】 将对象【万物皆对象】控制权交给Spring 注意：new的对象，不能被JVM垃圾回收机制回收">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2023/07/25/%E5%85%B3%E4%BA%8Espring%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/03_Spring.assets/1.jpg">
 <meta property="og:image" content="http://example.com/03_Spring.assets%5C2.jpg">
@@ -28,7 +28,7 @@
 <meta property="og:image" content="http://example.com/03_Spring.assets%5C13.jpg">
 <meta property="og:image" content="http://example.com/03_Spring.assets%5C14.jpg">
 <meta property="article:published_time" content="2023-07-25T07:30:46.098Z">
-<meta property="article:modified_time" content="2023-07-25T07:32:02.406Z">
+<meta property="article:modified_time" content="2023-07-25T13:54:57.585Z">
 <meta property="article:author" content="liu">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2023/07/25/%E5%85%B3%E4%BA%8Espring%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/03_Spring.assets/1.jpg">
@@ -207,7 +207,7 @@
     
   <div class="article-entry" itemprop="articleBody">
     
-    <h3 id="第一章-初识Spring"><a href="#第一章-初识Spring" class="headerlink" title="第一章 初识Spring"></a>第一章 初识Spring</h3><h4 id="1-1-Spring简介landscape"><a href="#1-1-Spring简介landscape" class="headerlink" title="1.1 Spring简介landscape"></a>1.1 Spring简介landscape</h4><ul>
+    <h2 id="关于spring的学习笔记"><a href="#关于spring的学习笔记" class="headerlink" title="关于spring的学习笔记"></a>关于spring的学习笔记</h2><h3 id="第一章-初识Spring"><a href="#第一章-初识Spring" class="headerlink" title="第一章 初识Spring"></a>第一章 初识Spring</h3><h4 id="1-1-Spring简介landscape"><a href="#1-1-Spring简介landscape" class="headerlink" title="1.1 Spring简介landscape"></a>1.1 Spring简介landscape</h4><ul>
 <li>Spring是一个为简化企业级开发而生的<strong>开源框架</strong>。</li>
 <li>Spring是一个<strong>IOC(DI)<strong>和</strong>AOP</strong>容器框架。</li>
 <li>IOC全称：Inversion of Control【控制反转】<ul>
@@ -216,11 +216,11 @@
 <li><img src="03_Spring.assets\1.jpg" style="zoom: 50%;" /></li>
 </ul>
 </li>
-<li>DI全称：(Dependency Injection)：依赖注入，可以理解为不仅可以管理对象本身以外，还可以管理其依赖关系，比如管理其属性。</li>
+<li><span id="more"></span>DI全称：(Dependency Injection)：依赖注入，可以理解为不仅可以管理对象本身以外，还可以管理其依赖关系，比如管理其属性。</li>
 <li>AOP全称：Aspect-Oriented Programming，面向切面编程</li>
 <li>官网：<a target="_blank" rel="noopener" href="https://spring.io/">https://spring.io/</a></li>
 </ul>
-<h4 id="1-2-Spring模块"><a href="#1-2-Spring模块" class="headerlink" title="1.2 Spring模块"></a><span id="more"></span>1.2 Spring模块</h4><p><img src="/03_Spring.assets%5C2.jpg"></p>
+<h4 id="1-2-Spring模块"><a href="#1-2-Spring模块" class="headerlink" title="1.2 Spring模块"></a>1.2 Spring模块</h4><p><img src="/03_Spring.assets%5C2.jpg"></p>
 <h4 id="1-3-搭建Spring框架步骤"><a href="#1-3-搭建Spring框架步骤" class="headerlink" title="1.3 搭建Spring框架步骤"></a>1.3 搭建Spring框架步骤</h4><ul>
 <li><p>导入jar包，该包中含有spring-jcl包（日志包），也就是说不用向mybatis一样依赖第三方日志 <strong>log4j</strong>了</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--导入spring-context，加上其依赖，共6个jar包--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-context<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.3.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--导入junit4.12--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.12<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">scope</span>&gt;</span>test<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
